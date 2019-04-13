@@ -169,6 +169,9 @@ export class Game extends Scene {
         this.gameOver = false;
         this.gameEnded = false;
 
+        this.score = 0;
+        this.updateUI();
+
         this.resetPlayer();
         this.resetStars();
         this.resetBombs();
